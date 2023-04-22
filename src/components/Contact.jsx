@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Contact = () => {
   return (
@@ -8,13 +10,33 @@ const Contact = () => {
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className=" pb-8">
-          <p className=" text-4xl font-bold inline border-b-4 border-gray-500">
+          <motion.p
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className=" text-4xl font-bold inline border-b-4 border-gray-500"
+          >
             Contact
-          </p>
-          <p className=" py-6">Submit the form below to get in touch!</p>
+          </motion.p>
+          <motion.p
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className=" py-6"
+          >
+            Submit the form below to get in touch!
+          </motion.p>
         </div>
 
-        <div className=" flex justify-center items-center">
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className=" flex justify-center items-center"
+        >
           <form
             action="https://getform.io/f/a6d0c6fa-bafb-47cf-9160-6e3ef01157db"
             method="POST"
@@ -43,7 +65,7 @@ const Contact = () => {
               Let's Talk!
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

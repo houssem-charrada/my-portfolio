@@ -3,6 +3,8 @@ import HeroImage from "../assets/heroImage.jpg";
 import { HiOutlineArrowRightCircle } from "react-icons/hi2";
 import { Link } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Home = () => {
   return (
@@ -12,13 +14,19 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="text-center order-2 flex flex-col justify-center h-full md:text-left md:w-3/5 md:order-1">
-          <h2 className=" mb-6 text-4xl md:text-7xl font-bold text-white">
+          <motion.h2
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className=" mb-6 text-4xl md:text-7xl font-bold text-white"
+          >
             I am{" "}
             <TypeAnimation
               sequence={[
                 "Houssem Charrada",
                 2000,
-                "a Front-End Developer",
+                "a Developer",
                 2000,
                 "a Designer",
                 2000,
@@ -28,13 +36,25 @@ const Home = () => {
               repeat={Infinity}
               className=" text-cyan-300"
             />
-          </h2>
-          <p className=" text-gray-500 py-4 max-w-md">
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("up", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className=" text-gray-500 py-4 max-w-md"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             pretium odio lectus, eu feugiat felis sagittis nec. Morbi sed elit a
             eros condimentum consequat.
-          </p>
-          <div className=" flex justify-center md:justify-start">
+          </motion.p>
+          <motion.div
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className=" flex justify-center md:justify-start"
+          >
             <Link
               to="Portfolio"
               smooth
@@ -46,15 +66,21 @@ const Home = () => {
                 <HiOutlineArrowRightCircle size={23} className=" ml-1" />
               </span>
             </Link>
-          </div>
+          </motion.div>
         </div>
-        <div className=" order-1 mt-28 md:w-2/5 md:order-2 md:mt-0">
+        <motion.div
+          variants={fadeIn("down", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className=" order-1 mt-28 md:w-2/5 md:order-2 md:mt-0"
+        >
           <img
             src={HeroImage}
             alt="my profile"
             className="rounded-full mx-auto w-2/3 border-cyan-300 border-4 md:w-full"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black px-4 z-10">
       <div>
-        <h1 className="text-5xl font-signature ml-2 text-gray-500 hover:text-cyan-300 cursor-pointer">
+        <h1 className="text-5xl font-signature ml-2 text-gray-500 hover:text-cyan-300 cursor-grab">
           Houssem
         </h1>
       </div>

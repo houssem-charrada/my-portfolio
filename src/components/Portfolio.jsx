@@ -5,6 +5,8 @@ import navbar from "../assets/portfolio/navbar.jpg";
 import reactParallax from "../assets/portfolio/reactParallax.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 function Portfolio() {
   const cards = [
@@ -46,12 +48,24 @@ function Portfolio() {
     },
   ];
 
+  let boxVariants = {};
+  const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
+  if (!isMobile) {
+    boxVariants = fadeIn("right", 0.2);
+  }
+
   return (
     <div
       name="Portfolio"
       className=" bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
     >
-      <div className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <motion.div
+        variants={boxVariants}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full"
+      >
         <div className=" pb-8">
           <p className=" text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
@@ -86,7 +100,7 @@ function Portfolio() {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
