@@ -15,7 +15,7 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className=" text-4xl font-bold inline border-b-4 border-gray-500"
+            className=" text-4xl font-bold inline border-b-4 border-cyan-300"
           >
             Contact
           </motion.p>

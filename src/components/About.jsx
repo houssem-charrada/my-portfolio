@@ -16,7 +16,7 @@ function About() {
           viewport={{ once: false, amount: 0.7 }}
           className=" pb-8"
         >
-          <p className=" text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className=" text-4xl font-bold inline border-b-4 border-cyan-300">
             About
           </p>
         </motion.div>
@@ -27,11 +27,9 @@ function About() {
           viewport={{ once: false, amount: 0.7 }}
           className=" text-xl mt-20"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium
-          odio lectus, eu feugiat felis sagittis nec. Morbi sed elit a eros
-          condimentum consequat. Cras sodales lacus eget dui commodo volutpat.
-          Nullam ut auctor ipsum. Nulla placerat at massa eu posuere. Mauris
-          eget vehicula sem.
+          Hello, my name is Houssem, and I am a passionate front-end web
+          developer. I have always been fascinated by the way websites work, and
+          I am thrilled to be pursuing my dream career in this field.
         </motion.p>
 
         <br />
@@ -43,12 +41,28 @@ function About() {
           viewport={{ once: false, amount: 0.7 }}
           className=" text-xl"
         >
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro culpa
-          aut quisquam? Sit expedita, doloribus laborum neque aspernatur maxime
-          esse ex ullam. Quae dolor esse quam, facilis deserunt reprehenderit
-          consequatur vel alias quisquam dolore, adipisci amet dignissimos,
-          error rem dolorum quibusdam! Vitae odio sint fugiat voluptatum sed
-          incidunt saepe dignissimos.
+          Throughout my education and personal projects, I have gained a strong
+          understanding of HTML, CSS, and JavaScript. I have also worked with
+          various frameworks and libraries, including React. I enjoy learning
+          new technologies and staying up to date with the latest trends in
+          front-end development.
+        </motion.p>
+
+        <br />
+
+        <motion.p
+          variants={fadeIn("up", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className=" text-xl"
+        >
+          What I find most exciting about front-end development is the ability
+          to create beautiful and engaging user experiences. I believe that a
+          well-designed website should not only look great but also be intuitive
+          and user-friendly. I am committed to creating responsive and
+          accessible websites that are both aesthetically pleasing and
+          functional.
         </motion.p>
       </div>
     </div>

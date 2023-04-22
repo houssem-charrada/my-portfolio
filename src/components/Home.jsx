@@ -44,9 +44,8 @@ const Home = () => {
             viewport={{ once: false, amount: 0.7 }}
             className=" text-gray-500 py-4 max-w-md"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            pretium odio lectus, eu feugiat felis sagittis nec. Morbi sed elit a
-            eros condimentum consequat.
+            A passionate, enthusiastic and creative front-end web developer and
+            thrilled to be pursuing his dream career in this field.
           </motion.p>
           <motion.div
             variants={fadeIn("up", 0.6)}

@@ -67,7 +67,7 @@ function Portfolio() {
         className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full"
       >
         <div className=" pb-8">
-          <p className=" text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className=" text-4xl font-bold inline border-b-4 border-cyan-300">
             Portfolio
           </p>
           <p className=" py-4">Check out my work!</p>
@@ -84,7 +84,7 @@ function Portfolio() {
                   target="_blank"
                   rel="noreferrer"
                   href={card.demo}
-                  className=" w-1/2 px-6 py-3 m-4 duration-300 hover:scale-110 text-center"
+                  className=" w-1/2 px-6 py-3 m-4 duration-300 hover:scale-110 text-center hover:text-cyan-300"
                 >
                   Demo
                 </a>
@@ -92,7 +92,7 @@ function Portfolio() {
                   target="_blank"
                   rel="noreferrer"
                   href={card.code}
-                  className=" w-1/2 px-6 py-3 m-4 duration-300 hover:scale-110 text-center"
+                  className=" w-1/2 px-6 py-3 m-4 duration-300 hover:scale-110 text-center hover:text-cyan-300"
                 >
                   Code
                 </a>
