@@ -22,7 +22,7 @@ const Social = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com",
+      href: "https://github.com/houssem-charrada?tab=repositories",
     },
     {
       id: 3,

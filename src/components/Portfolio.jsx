@@ -12,39 +12,45 @@ function Portfolio() {
   const cards = [
     {
       id: 1,
-      src: arrayDestruct,
-      demo: "https://www.facebook.com/",
-      code: "https://www.instagram.com/",
+      src: reactWeather,
+      demo: "https://sparkly-babka-b30701.netlify.app/",
+      code: "https://github.com/houssem-charrada/my-weather-app",
+      title: "My Weather App",
     },
     {
       id: 2,
       src: installNode,
       demo: "https://www.facebook.com/",
       code: "https://www.instagram.com/",
+      title: "Title",
     },
     {
       id: 3,
       src: navbar,
       demo: "https://www.facebook.com/",
       code: "https://www.instagram.com/",
+      title: "Title",
     },
     {
       id: 4,
       src: reactParallax,
       demo: "https://www.facebook.com/",
       code: "https://www.instagram.com/",
+      title: "Title",
     },
     {
       id: 5,
       src: reactSmooth,
       demo: "https://www.facebook.com/",
       code: "https://www.instagram.com/",
+      title: "Title",
     },
     {
       id: 6,
-      src: reactWeather,
+      src: arrayDestruct,
       demo: "https://www.facebook.com/",
       code: "https://www.instagram.com/",
+      title: "Title",
     },
   ];
 
@@ -79,20 +85,24 @@ function Portfolio() {
               className=" shadow-md shadow-gray-600 rounded-lg duration-200 hover:scale-105"
             >
               <img className=" rounded-md" src={card.src} alt="" />
+              <p className=" border-b-2 border-cyan-300 text-center py-2 text-white font-bold">
+                {card.title}
+              </p>
               <div className="flex items-center justify-center">
                 <a
                   target="_blank"
                   rel="noreferrer"
                   href={card.demo}
-                  className=" w-1/2 px-6 py-3 m-4 duration-300 hover:scale-110 text-center hover:text-cyan-300"
+                  className=" w-1/2 px-6 m-3 py-1 duration-300 hover:scale-110 text-center hover:text-cyan-300"
                 >
                   Demo
                 </a>
+                <p className=" text-cyan-300">|</p>
                 <a
                   target="_blank"
                   rel="noreferrer"
                   href={card.code}
-                  className=" w-1/2 px-6 py-3 m-4 duration-300 hover:scale-110 text-center hover:text-cyan-300"
+                  className=" w-1/2 px-6 m-3 py-1 duration-300 hover:scale-110 text-center hover:text-cyan-300"
                 >
                   Code
                 </a>
