@@ -12,7 +12,7 @@ const Social = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/houssem-charrada-444619198/",
       style: "rounded-tr-md",
     },
     {
@@ -31,7 +31,7 @@ const Social = () => {
           Email <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "mailto:houssem.mailbox@gmail.com",
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ const Social = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/My CV.pdf",
+      href: "/Houssem_Charrada_Resume.pdf",
       style: "rounded-br-md",
       download: true,
     },

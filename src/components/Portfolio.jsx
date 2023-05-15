@@ -1,9 +1,5 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+import comingSoon from "../assets/portfolio/comingSoon.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -19,38 +15,38 @@ function Portfolio() {
     },
     {
       id: 2,
-      src: installNode,
-      demo: "https://www.facebook.com/",
-      code: "https://www.instagram.com/",
-      title: "Title",
+      src: comingSoon,
+      demo: "",
+      code: "",
+      title: "Work in progress",
     },
     {
       id: 3,
-      src: navbar,
-      demo: "https://www.facebook.com/",
-      code: "https://www.instagram.com/",
-      title: "Title",
+      src: comingSoon,
+      demo: "",
+      code: "",
+      title: "Work in progress",
     },
     {
       id: 4,
-      src: reactParallax,
-      demo: "https://www.facebook.com/",
-      code: "https://www.instagram.com/",
-      title: "Title",
+      src: comingSoon,
+      demo: "",
+      code: "",
+      title: "Work in progress",
     },
     {
       id: 5,
-      src: reactSmooth,
-      demo: "https://www.facebook.com/",
-      code: "https://www.instagram.com/",
-      title: "Title",
+      src: comingSoon,
+      demo: "",
+      code: "",
+      title: "Work in progress",
     },
     {
       id: 6,
-      src: arrayDestruct,
-      demo: "https://www.facebook.com/",
-      code: "https://www.instagram.com/",
-      title: "Title",
+      src: comingSoon,
+      demo: "",
+      code: "",
+      title: "Work in progress",
     },
   ];
 
